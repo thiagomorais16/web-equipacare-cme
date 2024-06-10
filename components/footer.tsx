@@ -22,6 +22,42 @@ const navLinks = [
     link: "#",
     label: "Serviços",
   },
+  {
+    link: "#",
+    label: "Engenharia Hospitalar",
+  },
+  {
+    link: "#",
+    label: "Consultoria e Projetos",
+  },
+  {
+    link: "#",
+    label: "Engenharia Clínica",
+  },
+  {
+    link: "#",
+    label: "Manutenção e Calibração",
+  },
+  {
+    link: "#",
+    label: "Materiais",
+  },
+  {
+    link: "#",
+    label: "Clientes",
+  },
+  {
+    link: "#",
+    label: "Equipacare Edi",
+  },
+  {
+    link: "#",
+    label: "Fix System",
+  },
+  {
+    link: "#",
+    label: "Contato",
+  },
 ];
 
 const contactLinks = [
@@ -61,7 +97,7 @@ const Footer = () => {
               Mapa do site
             </h2>
 
-            <ul className="flex flex-col gap-1 mt-2">
+            <ul className="flex flex-col gap-1 mt-2 lg:w-56">
               {navLinks.map((info) => (
                 <li key={info.label}>
                   <a
@@ -78,7 +114,7 @@ const Footer = () => {
             <h2 className="text-[#D5D5D5] lg:text-xl font-semibold capitalize">
               Contato
             </h2>
-            <ul className="flex flex-col gap-1 mt-2 ">
+            <ul className="flex flex-col gap-1 mt-2 lg:w-56 ">
               {contactLinks.map((info) => (
                 <li key={info.label}>
                   <a
@@ -96,50 +132,50 @@ const Footer = () => {
               Acompanhe nossas redes sociais
             </h2>
             <ul className="flex gap-4 mt-4">
-              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg">
+              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg hover:bg-[#505050]">
                 <a
                   href="#"
-                  className="text-[#A4BA25] hover:font-bold transition-all duration-500"
+                  className="text-[#A4BA25] hover:font-bold transition-all duration-500  hover:text-white"
                 >
                   <FontAwesomeIcon
                     icon={faFacebook}
-                    size="2xs"
-                    className="text-[#A4BA25]"
+                    size="2xl"
+                    className="text-[#A4BA25] "
                   />
                 </a>
               </li>
-              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg">
+              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg hover:bg-[#505050]">
                 <a
                   href="#"
                   className="text-[#A4BA25] hover:font-bold transition-all duration-500"
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    size="2xs"
+                    size="2xl"
                     className="text-[#A4BA25]"
                   />
                 </a>
               </li>
-              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg">
+              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg hover:bg-[#505050]">
                 <a
                   href="#"
                   className="text-[#A4BA25] hover:font-bold transition-all duration-500"
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    size="2xs"
+                    size="2xl"
                     className="text-[#A4BA25]"
                   />
                 </a>
               </li>
-              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg">
+              <li className="bg-[#484848] w-16 h-16 p-4 rounded-lg hover:bg-[#505050]">
                 <a
                   href="#"
                   className="text-[#A4BA25] hover:font-bold transition-all duration-500"
                 >
                   <FontAwesomeIcon
                     icon={faYoutube}
-                    size="2xs"
+                    size="2xl"
                     className="text-[#A4BA25]"
                   />
                 </a>
@@ -165,7 +201,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-black h-20 flex items-center justify-center">
-          <p className="text-gray-400 antialiased">
+          <p className="text-gray-400 ">
             Todos os direitos reservados. Feito com 💙 pela{" "}
             <a
               href="#"

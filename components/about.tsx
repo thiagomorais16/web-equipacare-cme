@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div
-        className="flex flex-col-reverse lg:flex-row items-center lg:justify-around lg:gap-0 lg:px-52
+        className="flex flex-col-reverse lg:flex-row items-center lg:justify-around lg:gap-0 lg:px-52 lg:py-24
        gap-10 bg-[#161935]  py-10 px-10"
       >
         <div className="flex flex-col ">
@@ -16,13 +16,18 @@ const About = () => {
               planejamento
             </u>
           </h1>
-          <p className="mt-8 text-base text-white lg:text-lg antialiased lg:w-[75%]">
-            Com a nossa calculadora, você terá acesso a uma ferramenta poderosa
-            que simplifica o cálculo dos ciclos de esterilização, levando em
-            consideração diversos fatores como tipo de equipamento, carga,
-            temperatura e tempo de exposição. Além disso, nossa equipe de
-            especialistas está disponível para fornecer suporte e orientação
-            personalizados, garantindo que você alcance os melhores resultados.
+          <p className="mt-8 text-base text-white lg:text-lg antialiased lg:w-[75%] text-justify">
+            Com a nossa calculadora, você terá acesso a uma
+            <strong> ferramenta poderosa </strong>
+            que simplifica o cálculo dos ciclos de esterilização,
+            <strong> levando em consideração diversos fatores</strong> como tipo
+            de equipamento, carga, temperatura e tempo de exposição.
+          </p>
+          <p className="mt-5 text-base text-white lg:text-lg antialiased lg:w-[75%] text-justify">
+            Além disso,
+            <strong> nossa equipe de especialistas está disponível</strong> para
+            fornecer suporte e orientação personalizados, garantindo que você
+            alcance os <strong>melhores resultados</strong>.
           </p>
           <div className="mt-7">
             <GreenButton text="Quero saber mais" />

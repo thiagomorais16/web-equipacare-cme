@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Encode_Sans_Condensed } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const encodeSansCondensed = Encode_Sans_Condensed({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"], // Normal (400) and Bold (700)
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={encodeSansCondensed.className}>{children}</body>
+      <body className={openSans.className}>{children}</body>
     </html>
   );
 }
