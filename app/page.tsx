@@ -15,8 +15,6 @@ export default function Home() {
           Receba um relatório personalizado e detalhado com recomendações de equipamentos e marcas que atendem perfeitamente às suas necessidades."
         />
         <About />
-
-        <GreenButton />
         <Footer />
       </main>
     </>
