@@ -48,7 +48,7 @@ interface FormValues {
   pp: boolean;
 }
 
-const IndexPage: React.FC = () => {
+const StepForm: React.FC = () => {
   const [formStep, setFormStep] = React.useState<number>(0);
   const {
     register,
@@ -312,4 +312,4 @@ const IndexPage: React.FC = () => {
   );
 };
 
-export default IndexPage;
+export default StepForm;

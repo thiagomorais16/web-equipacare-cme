@@ -1,8 +1,7 @@
-import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { ReactNode } from "react";
 
 import { Encode_Sans_Condensed } from "next/font/google";
+import Image from "next/image";
 
 const encode = Encode_Sans_Condensed({
   subsets: ["latin"],
@@ -11,13 +10,22 @@ const encode = Encode_Sans_Condensed({
 
 interface GreenButtonProps {
   text: string;
+  icon?: string;
+  children?: ReactNode;
 }
 
 const GreenButton = (props: GreenButtonProps) => {
   return (
     <div className={encode.className}>
-      <button className="bg-[#a7b928] py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#303436] hover:text-white transition-all duration-500">
+      <button className=" flex  gap-4 bg-[#a7b928] py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#303436] hover:text-white transition-all duration-500">
         {props.text}
+        <Image
+          src={props.icon}
+          alt="icon "
+          height={24}
+          width={24}
+          className="hover:text-white"
+        />
       </button>
     </div>
   );
