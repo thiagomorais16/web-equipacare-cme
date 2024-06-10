@@ -1,12 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-const Hero = () => {
+interface HeroProps {
+  title: string;
+  subtitle: string;
+}
+
+const Hero = (props: HeroProps) => {
   return (
     <>
-      <div>img text sub</div>
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
-        <p>Somos a Equipacare</p>
+        <h1>{props.title}</h1>
+        <p>{props.subtitle}</p>
         <Image
           src="/images/home-banner-matrizes.jpg"
           alt=""
