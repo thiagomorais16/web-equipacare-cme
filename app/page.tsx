@@ -1,3 +1,4 @@
+import About from "./components/about";
 import Footer from "./components/footer";
 import GreenButton from "./components/greenButton";
 import Hero from "./components/hero";
@@ -9,9 +10,11 @@ export default function Home() {
       <main>
         <NavbarMenu />
         <Hero
-          title="Utilize a nossa Calculadora CME"
-          subtitle="Receba um relatório detalhado com equipamentos e marcas que realmente atendem às suas necessidades."
+          title="Experimente a nossa Calculadora CME"
+          subtitle="
+          Receba um relatório personalizado e detalhado com recomendações de equipamentos e marcas que atendem perfeitamente às suas necessidades."
         />
+        <About />
 
         <GreenButton />
         <Footer />

@@ -51,7 +51,7 @@ const Footer = () => {
               width={200}
               height={100}
             />
-            <p className="text-white antialiased mt-4  lg:w-[300px] lg:mt-10 antialiased">
+            <p className="text-white mt-4  lg:w-[300px] lg:mt-10 antialiased">
               Empresa de Engenharia para Clínicas e Hospitais com foco na
               Inteligência do Negócio.
             </p>
@@ -165,8 +165,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-black h-20 flex items-center justify-center">
-          <p className="text-[#54595F] antialiased">
-            Todos os direitos reservados. Feito com 💙 por{" "}
+          <p className="text-gray-400 antialiased">
+            Todos os direitos reservados. Feito com 💙 pela{" "}
             <a
               href="#"
               target="_blank"
