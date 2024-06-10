@@ -34,7 +34,7 @@ const FinishSectionButton: React.FC<FinishSectionButtonProps> = ({
       onClick={onClick}
       disabled={isDisabled}
       type="button"
-      className="mt-6 bg-[#a7b928] py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#a7b928] hover:text-white hover:shadow-lg transition-all duration-500 w-full disabled:bg-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed"
+      className="mt-6 bg-[#a7b928] text-white py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#a7b928] hover:text-white hover:shadow-lg transition-all duration-500 w-full disabled:bg-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed"
     >
       {children}
     </button>
@@ -152,24 +152,45 @@ const StepForm: React.FC = () => {
                   </p>
                 )}
               </div>
-              <div className="flex flex-col mt-4">
-                <Label htmlFor="username">Segmento da empresa:</Label>
-                <Select>
-                  <SelectTrigger className="w-[250px] mt-4">
-                    <SelectValue placeholder="Selecione uma opção" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="a">Segmento A</SelectItem>
-                    <SelectItem value="b">Segmento B</SelectItem>
-                    <SelectItem value="c">Segmento C</SelectItem>
-                  </SelectContent>
-                </Select>
+              <div className="flex flex-col lg:flex-row lg:gap-4">
+                <div className="flex flex-col mt-4">
+                  <Label htmlFor="username">Segmento da empresa:</Label>
+                  <Select>
+                    <SelectTrigger className="w-[250px] mt-4">
+                      <SelectValue placeholder="Selecione uma opção" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="a">Segmento A</SelectItem>
+                      <SelectItem value="b">Segmento B</SelectItem>
+                      <SelectItem value="c">Segmento C</SelectItem>
+                    </SelectContent>
+                  </Select>
 
-                {errors.username && (
-                  <p className="text-sm text-red-600 mt-2">
-                    {errors.username.message}
-                  </p>
-                )}
+                  {errors.username && (
+                    <p className="text-sm text-red-600 mt-2">
+                      {errors.username.message}
+                    </p>
+                  )}
+                </div>
+                <div className="flex flex-col mt-4">
+                  <Label htmlFor="username">Cargo:</Label>
+                  <Select>
+                    <SelectTrigger className="w-[250px] mt-4">
+                      <SelectValue placeholder="Selecione uma opção" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="a">Cargo A</SelectItem>
+                      <SelectItem value="b">Cargo B</SelectItem>
+                      <SelectItem value="c">Cargo C</SelectItem>
+                    </SelectContent>
+                  </Select>
+
+                  {errors.username && (
+                    <p className="text-sm text-red-600 mt-2">
+                      {errors.username.message}
+                    </p>
+                  )}
+                </div>
               </div>
 
               <FinishSectionButton
@@ -281,9 +302,9 @@ const StepForm: React.FC = () => {
               <button
                 disabled={!isValid}
                 type="submit"
-                className="mt-6 marker:bg-[#a7b928] py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#a7b928] hover:text-white hover:shadow-lg transition-all duration-500 w-full disabled:bg-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed"
+                className="mt-6 bg-[#a7b928] text-white py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#a7b928] hover:text-white hover:shadow-lg transition-all duration-500 w-full disabled:bg-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed"
               >
-                Gerar calculo baseado nas informações
+                Gerar cálculo baseado nas informações
               </button>
             </section>
           )}
@@ -295,7 +316,7 @@ const StepForm: React.FC = () => {
               <p>Informações geradas baseada nos cálculos...</p>
               <button
                 type="submit"
-                className="mt-6 bg-[#a7b928] py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#a7b928] hover:text-white hover:shadow-lg transition-all duration-500 w-full disabled:bg-gray-300 "
+                className="mt-6 bg-[#a7b928] text-white py-3 px-6 uppercase font-bold rounded-md font-econdensed hover:bg-[#a7b928] hover:text-white hover:shadow-lg transition-all duration-500 w-full disabled:bg-gray-300 "
               >
                 <FontAwesomeIcon icon={faChartPie} className="mr-2" size="lg" />
                 Solicitar um relatório detalhado
